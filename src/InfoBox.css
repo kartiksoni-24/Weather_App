@@ -1,0 +1,67 @@
+.info-container {
+  box-shadow: 0 0 10px black;
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  margin: 2rem 2rem 0 2rem;
+  border-radius: 20px;
+  width: 30rem;
+  height: 32rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.otherInfo-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.common-div {
+  width: 13rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px black;
+  background-color: rgba(255, 255, 255, 0.425);
+  backdrop-filter: blur(10px);
+}
+
+.info-container h2 {
+  font-size: 50px;
+  margin-bottom: -10px;
+  margin-top: 0;
+}
+
+.info-container h1 {
+  text-shadow: 0 0 2px white;
+  margin-top: 0;
+}
+
+.main-weather {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.weather-icon {
+  transition: 1s ease-in-out;
+}
+
+.time-span {
+  margin-left: 26rem;
+  text-shadow: 0 0 2px white;
+  font-weight: bold;
+}
+
+@media (width < 750px) {
+  .info-container {
+    width: 18rem;
+    padding: 0 15px 15px 15px;
+  }
+
+  .common-div {
+    width: 8.8rem;
+    padding: 0;
+  }
+
+  .time-span {
+    margin-left: 14rem;
+  }
+}
