@@ -48,29 +48,12 @@ export default function SearchBox({ updateData }) {
       // console.log(fullData);
       updateData(fullData);
     } catch (error) {
-      console.error("Error:", error);
+      setError(true);
+      // console.log(error);
     } finally {
       setIsLoading(false);
     }
   };
-
-  // useEffect(() => {
-  //   async () => {
-  //     setIsLoading(true);
-  //     try {
-  //       const city = await getLocation();
-  //       // console.log("City Name:", city);
-  //       let finalResult = await handleSubmit(city, URL, API_KEY);
-  //       let fullData = { ...finalResult, hour: Number(finalResult.hour) };
-  //       // console.log(fullData);
-  //       updateData(fullData);
-  //     } catch (error) {
-  //       console.error("Error:", error);
-  //     } finally {
-  //       setIsLoading(false);
-  //     }
-  //   };
-  // }, []);
 
   return (
     <>
@@ -121,7 +104,7 @@ export default function SearchBox({ updateData }) {
             color: "red",
           }}
         >
-          No such place exist in our database!
+          Sorry, we don't have data for this location!
         </p>
       )}
       {isLoading && (
