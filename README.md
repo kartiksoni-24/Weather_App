@@ -51,10 +51,7 @@ This is a simple and responsive Weather App built using React and Vite. It fetch
 This app uses the OpenWeatherMap API to fetch weather data. To run the app, you need an API key:
 
 1. Sign up at [OpenWeatherMap](https://openweathermap.org/) and get your API key.
-2. Create a `.env` file in the project root and add your key:
-   ```env
-   VITE_API_KEY=your_api_key_here
-   ```
+2. Create a `.env` file in the project root and add your key.
 3. Restart the development server.
 
 ## 🌐 Live Demo
